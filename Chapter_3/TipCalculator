@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class TipCalculator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Enter the check amount: $");
+        double checkAmount = scanner.nextDouble();
+
+        double tipPercentage = 0.15;
+        double tipAmount = checkAmount * tipPercentage;
+        double totalAmount = checkAmount + tipAmount;
+
+        System.out.printf("Check amount: $%.2f\n", checkAmount);
+        System.out.printf("Minimum tip (15%%): $%.2f\n", tipAmount);
+        System.out.printf("Total amount (including tip): $%.2f\n", totalAmount);
+
+        scanner.close();
+    }
+}
