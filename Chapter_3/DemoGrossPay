@@ -1,0 +1,25 @@
+import javax.swing.*;
+
+public class DemoGrossPay {
+    public static double calculateGross(double hoursWorked, double hourlyRate) {
+        return hoursWorked * hourlyRate;
+    }
+
+    public static void main(String[] args) {
+        final double hourlyRate = 22.75; 
+
+
+        double hours1 = 10.0;
+        double hours2 = 25.0;
+        double hours3 = 37.5;
+
+
+        double gross1 = calculateGross(hours1, hourlyRate);
+        double gross2 = calculateGross(hours2, hourlyRate);
+        double gross3 = calculateGross(hours3, hourlyRate);
+
+        System.out.println(hours1 + " hours at $" + hourlyRate + " per hour is $" + gross1);
+        System.out.println(hours2 + " hours at $" + hourlyRate + " per hour is $" + gross2);
+        System.out.println(hours3 + " hours at $" + hourlyRate + " per hour is $" + gross3);
+    }
+}
